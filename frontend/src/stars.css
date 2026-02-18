@@ -1,0 +1,30 @@
+.starfield {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  animation: twinkle-strong ease-in-out infinite alternate;
+}
+
+.star--large {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes twinkle-strong {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}

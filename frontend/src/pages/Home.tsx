@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 
 function Home() {
   return (
-    <main className="app-shell bg-midnight/60 text-white flex-1 grid-cols-5 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px]">
+    <main className="app-shell text-white flex-1 grid-cols-5">
       <div className="col-start-2 col-span-3 w-full max-w-3xl justify-self-start space-y-6">
         <section className="relative overflow-hidden rounded-3xl border border-white/15 bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none">
         <p className="text-sm uppercase tracking-[0.35em] text-mist/70">
@@ -20,7 +20,7 @@ function Home() {
               Currently
             </p>
             <p className="mt-2 text-base text-white">
-              Second year Computer Science student at King's College London.<br />
+              2nd year Computer Science student at King's College London.<br />
               Building across the full stack, experimenting with different languages, and strengthening my foundations in systems and software design.
             </p>
         </div>
