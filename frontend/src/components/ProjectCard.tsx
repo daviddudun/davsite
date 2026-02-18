@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 function ProjectCard({ name, description, githubUrl, stack }: ProjectCardProps) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-6">
+    <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-black/25 p-6 backdrop-blur-sm">
       <h2 className="text-2xl font-semibold tracking-tight text-white font-mono">
         {name}
       </h2>
