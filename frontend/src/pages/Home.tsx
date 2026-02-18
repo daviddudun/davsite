@@ -1,7 +1,10 @@
+import { Github, Linkedin, Mail } from 'lucide-react'
+
 function Home() {
   return (
-    <main className="app-shell bg-midnight text-white flex-1">
-      <section className="w-full max-w-3xl rounded-3xl border border-white/10 bg-steel/90 p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
+    <main className="app-shell bg-midnight text-white flex-1 grid-cols-5">
+      <div className="col-start-2 col-span-3 w-full max-w-3xl justify-self-start space-y-6">
+        <section className="rounded-3xl border border-white/20 bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
         <p className="text-sm uppercase tracking-[0.35em] text-mist/70">
           Profile
         </p>
@@ -21,31 +24,40 @@ function Home() {
               Building across the full stack, experimenting with different languages, and strengthening my foundations in systems and software design.
             </p>
         </div>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <a
-            className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold text-white/90 transition hover:border-white"
-            href="https://github.com/xlightningstar"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            className="rounded-full border border-white/30 px-5 py-2 text-sm font-semibold text-white/90 transition hover:border-white"
-            href="https://www.linkedin.com/in/david-dudun-8995bb180/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a
-            className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:shadow-lg"
-            href="mailto:david.dudun@gmail.com"
-          >
-            Contact
-          </a>
-        </div>
-      </section>
+        </section>
+        <section className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(0,0,0,0.25)] backdrop-blur">
+          <p className="text-xs uppercase tracking-[0.3em] text-mist/60">
+            Connect
+          </p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-3">
+            <a
+              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40"
+              href="https://github.com/xlightningstar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Github className="h-5 w-5" aria-hidden="true" />
+              GitHub
+            </a>
+            <a
+              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40"
+              href="https://www.linkedin.com/in/david-dudun-8995bb180/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin className="h-5 w-5" aria-hidden="true" />
+              LinkedIn
+            </a>
+            <a
+              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40"
+              href="mailto:david.dudun@gmail.com"
+            >
+              <Mail className="h-5 w-5" aria-hidden="true" />
+              Email
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
   )
 }
