@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <main className="app-shell bg-midnight text-white">
+    <main className="app-shell bg-midnight text-white flex-1">
       <section className="w-full max-w-3xl rounded-3xl border border-white/10 bg-steel/90 p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur">
         <p className="text-sm uppercase tracking-[0.35em] text-mist/70">
           Profile
