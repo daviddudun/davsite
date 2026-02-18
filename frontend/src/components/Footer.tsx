@@ -9,6 +9,9 @@ function Footer() {
           <a className="transition hover:text-white" href="/projects">
             Projects
           </a>
+          <a className="transition hover:text-white" href="/blog">
+            Blog
+          </a>
         </div>
         <div>© {new Date().getFullYear()} David Dudun</div>
       </div>

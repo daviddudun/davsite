@@ -29,6 +29,14 @@ function NavBar() {
           >
             Projects
           </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              `${linkBase} ${isActive ? linkActive : ''}`.trim()
+            }
+          >
+            Blog
+          </NavLink>
         </div>
       </nav>
     </header>
