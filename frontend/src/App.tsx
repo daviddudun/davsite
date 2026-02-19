@@ -13,7 +13,7 @@ function AppLayout() {
     <div className="min-h-screen flex flex-col">
       {!hideSpaceEffects && (
         <>
-          <CometField count={10} />
+          <CometField count={5} />
           <StarField count={400} countLarge={100} />
         </>
       )}
