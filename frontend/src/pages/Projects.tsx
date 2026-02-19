@@ -1,18 +1,10 @@
 import { ProjectCard } from '../components'
-
-const projects = [
-  {
-    name: 'Davsite',
-    description: 'A personal portfolio website',
-    githubUrl: 'https://github.com/xlightningstar/davsite',
-    stack: ['Django', 'React', 'TypeScript', 'Tailwind'],
-  }
-]
+import { projects } from '../data/projects'
 
 function Projects() {
   return (
     <main className="app-shell text-white flex-1">
-      <section className="relative w-full max-w-6xl overflow-hidden rounded-3xl border border-white/15 bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none">
+      <section className="relative w-full max-w-6xl overflow-hidden rounded-3xl bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none">
         <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
           Projects
         </h1>

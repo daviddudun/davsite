@@ -12,5 +12,5 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Notes on design decisions, component structure, and keeping the UI cohesive',
     date: '2026-02-18'
-  }
+  },
 ]
