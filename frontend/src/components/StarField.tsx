@@ -22,7 +22,7 @@ function makeStar(id: number, size: number): Star {
     size,
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
-    opacity: 0.25,
+    opacity: 0.25 * (Math.random() + 1),
     duration: 2 + Math.random() * 3,
     delay: Math.random() * 4,
   }
