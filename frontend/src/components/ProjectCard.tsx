@@ -1,3 +1,5 @@
+import { Github} from 'lucide-react'
+
 type ProjectCardProps = {
   name: string
   description: string
@@ -11,7 +13,7 @@ function ProjectCard({ name, description, githubUrl, stack }: ProjectCardProps) 
       <h2 className="text-2xl font-semibold tracking-tight text-white font-mono">
         {name}
       </h2>
-      <p className="mt-3 text-sm text-mist/80">{description}</p>
+      <p className="mt-3 min-h-[3.5rem] text-sm text-mist/80">{description}</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {stack.map((tool) => (
           <span
@@ -27,8 +29,9 @@ function ProjectCard({ name, description, githubUrl, stack }: ProjectCardProps) 
           href={githubUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center rounded-full border border-cyan-300/70 px-4 py-1.5 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-white"
+          className="btn-accent inline-flex items-center rounded-md border px-4 py-1.5 text-sm font-semibold"
         >
+          <Github className="h-5 w-5" aria-hidden="true" />
           GitHub
         </a>
       </div>

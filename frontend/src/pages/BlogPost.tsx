@@ -14,7 +14,7 @@ function BlogPost() {
             That entry doesn't exist yet. Head back to the blog overview.
           </p>
           <Link
-            className="mt-6 inline-flex items-center rounded-full border border-cyan-300/70 px-4 py-1.5 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-white"
+            className="btn-accent mt-6 inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-semibold"
             to="/blog"
           >
             Back to blog
@@ -38,7 +38,7 @@ function BlogPost() {
         </p>
         <div className="mt-8">
           <Link
-            className="inline-flex items-center rounded-full border border-cyan-300/70 px-4 py-1.5 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-white"
+            className="btn-accent inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-semibold"
             to="/blog"
           >
             Back to blog

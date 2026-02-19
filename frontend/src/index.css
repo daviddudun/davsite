@@ -9,6 +9,9 @@
   font-family: 'Space Grotesk', system-ui, sans-serif;
   color: #f8fafc;
   background-color: #000000;
+  --accent: #dadada;
+  --accent-border: #307cff;
+  --accent-hover: #9bbdff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,4 +36,16 @@ body {
     url('./assets/background.jpg') center/cover no-repeat;
   position: relative;
   overflow-x: hidden;
+}
+
+.btn-accent {
+  border-color: var(--accent-border);
+  color: var(--accent);
+  background-color: #0b1b3a;
+  transition: color 150ms, border-color 150ms, box-shadow 150ms;
+}
+
+.btn-accent:hover {
+  border-color: var(--accent-hover);
+  color: #ffffff;
 }

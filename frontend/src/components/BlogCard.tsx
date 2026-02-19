@@ -19,7 +19,7 @@ function BlogCard({ post }: BlogCardProps) {
       <p className="mt-3 text-sm text-mist/80">{post.excerpt}</p>
       <div className="mt-6">
         <Link
-          className="inline-flex items-center rounded-full border border-cyan-300/70 px-4 py-1.5 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-white"
+          className="btn-accent inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-semibold"
           to={`/blog/${post.slug}`}
         >
           Read entry

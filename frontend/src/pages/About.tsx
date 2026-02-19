@@ -79,13 +79,13 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="min-h-[60vh] bg-black/70 px-6 pt-28 pb-16">
+      <section className="bg-black/70 px-6 pt-20 pb-16">
         <div className="mx-auto w-full max-w-4xl text-mist/80">
           <p className="text-sm uppercase tracking-[0.35em] text-mist/60">
             Projects
           </p>
           <h2 className="mt-4 text-3xl font-semibold text-white">
-            Check out some of the projects I've been working on
+            Check out some of my projects
           </h2>
           <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-center">
             <div className="grid flex-1 gap-4 md:grid-cols-2">
@@ -96,7 +96,7 @@ function About() {
             <div className="lg:self-center">
               <Link
                 to="/projects"
-                className="inline-flex items-center rounded-full border border-cyan-300/70 px-4 py-2 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-white"
+                className="btn-accent inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold"
               >
                 See more
               </Link>
@@ -104,18 +104,18 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="bg-black/80 px-6 pt-10 pb-20">
+      <section className="bg-black/80 px-6 pb-20">
         <div className="mx-auto w-full max-w-4xl text-mist/80">
           <p className="text-sm uppercase tracking-[0.35em] text-mist/60">
             Blog
           </p>
           <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h2 className="text-3xl font-semibold text-white">
-              Latest writing and notes
+              Latest writing
             </h2>
             <Link
               to="/blog"
-              className="inline-flex items-center rounded-full border border-cyan-300/70 px-4 py-2 text-sm font-semibold text-cyan-200 transition hover:border-cyan-200 hover:text-white"
+              className="btn-accent inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold"
             >
               See more
             </Link>
