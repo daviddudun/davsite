@@ -19,7 +19,7 @@ function NavBar() {
             }
             end
           >
-            Home
+            About
           </NavLink>
           <NavLink
             to="/projects"

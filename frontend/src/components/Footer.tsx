@@ -4,7 +4,7 @@ function Footer() {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-6 px-6 py-8 text-sm text-mist/70 md:flex-row md:items-center">
         <div className="flex flex-wrap gap-4">
           <a className="transition hover:text-white" href="/">
-            Home
+            About
           </a>
           <a className="transition hover:text-white" href="/projects">
             Projects

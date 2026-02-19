@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { BlogCard, CometField, ProjectCard, StarField } from '../components'
@@ -5,10 +6,13 @@ import { blogPosts } from '../data/blog'
 import { projects } from '../data/projects'
 
 const recentProjects = projects.slice(0, 2)
-
 const recentPosts = blogPosts.slice(0, 2)
 
-function Home() {
+function About() {
+  useEffect(() => {
+    document.title = 'About'
+  }, [])
+
   return (
     <main className="text-white flex-1">
       <section className="relative overflow-hidden bg-midnight/20 pb-16">
@@ -18,7 +22,7 @@ function Home() {
           <div className="col-start-2 col-span-3 w-full max-w-3xl justify-self-start space-y-6">
             <section className="relative overflow-hidden rounded-3xl border border-white/15 bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none">
               <p className="text-sm uppercase tracking-[0.35em] text-mist/70">
-                Profile
+                About
               </p>
               <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-5xl">
                 Hi, I'm David.
@@ -46,7 +50,7 @@ function Home() {
               </p>
               <div className="mt-4 grid gap-3 sm:grid-cols-3">
                 <a
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40"
+                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40 hover:bg-white/10 hover:backdrop-blur-md"
                   href="https://github.com/xlightningstar"
                   target="_blank"
                   rel="noreferrer"
@@ -55,7 +59,7 @@ function Home() {
                   GitHub
                 </a>
                 <a
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40"
+                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40 hover:bg-white/10 hover:backdrop-blur-md"
                   href="https://www.linkedin.com/in/david-dudun-8995bb180/"
                   target="_blank"
                   rel="noreferrer"
@@ -64,7 +68,7 @@ function Home() {
                   LinkedIn
                 </a>
                 <a
-                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40"
+                  className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:border-white/40 hover:bg-white/10 hover:backdrop-blur-md"
                   href="mailto:david.dudun@gmail.com"
                 >
                   <Mail className="h-5 w-5" aria-hidden="true" />
@@ -75,7 +79,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-black/70 px-6 pt-60 pb-16">
+      <section className="min-h-[60vh] bg-black/70 px-6 pt-28 pb-16">
         <div className="mx-auto w-full max-w-4xl text-mist/80">
           <p className="text-sm uppercase tracking-[0.35em] text-mist/60">
             Projects
@@ -100,7 +104,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-black/80 px-6 pb-20">
+      <section className="bg-black/80 px-6 pt-10 pb-20">
         <div className="mx-auto w-full max-w-4xl text-mist/80">
           <p className="text-sm uppercase tracking-[0.35em] text-mist/60">
             Blog
@@ -127,4 +131,4 @@ function Home() {
   )
 }
 
-export default Home
+export default About
