@@ -36,7 +36,7 @@ function About() {
                   Currently
                 </p>
                 <p className="mt-2 text-base text-white">
-                  2nd year Computer Science student at King's College London.
+                  3rd year Computer Science student at King's College London.
                   <br />
                   Building across the full stack, experimenting with different
                   languages, and strengthening my foundations in systems and
