@@ -36,6 +36,11 @@ function BlogPost() {
         <p className="mt-4 text-base text-mist/80 md:text-lg">
           {post.excerpt}
         </p>
+        <div className="mt-8 space-y-5 text-base leading-8 text-mist/90 md:text-lg">
+          {post.content.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
         <div className="mt-8">
           <Link
             className="btn-accent inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-semibold"
