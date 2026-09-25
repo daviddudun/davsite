@@ -26,7 +26,7 @@ function Footer() {
             </a>
             <a
               className="transition hover:text-white"
-              href="https://github.com/xlightningstar"
+              href="https://github.com/daviddudun"
               target="_blank"
               rel="noreferrer"
             >
