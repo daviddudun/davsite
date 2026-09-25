@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import { blogPosts } from '../data/blog'
 import { BlogCard } from '../components'
 
 function Blog() {
+  useEffect(() => {
+    document.title = 'Blog'
+  }, [])
+
   return (
     <main className="app-shell text-white flex-1">
       <section className="relative w-full max-w-6xl overflow-hidden rounded-3xl bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none">
