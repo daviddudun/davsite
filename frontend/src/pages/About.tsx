@@ -18,9 +18,9 @@ function About() {
       <section className="relative overflow-hidden bg-midnight/20 pb-16">
         <CometField count={5} />
         <StarField count={400} countLarge={100} />
-        <div className="app-shell grid-cols-5">
-          <div className="col-start-2 col-span-3 w-full max-w-3xl justify-self-start space-y-6">
-            <section className="relative overflow-hidden rounded-3xl border border-white/15 bg-transparent p-10 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none">
+        <div className="app-shell !px-3 grid-cols-1 sm:!px-5 sm:grid-cols-5">
+          <div className="col-span-1 w-full max-w-3xl space-y-6 sm:col-start-2 sm:col-span-3 sm:justify-self-start">
+            <section className="relative overflow-hidden rounded-3xl border border-white/15 bg-transparent p-5 shadow-[0_30px_80px_rgba(0,0,0,0.35)] backdrop-blur-xs ring-1 ring-white/10 before:absolute before:inset-0 before:bg-[radial-gradient(120%_80%_at_10%_0%,rgba(255,255,255,0.25),transparent_60%)] before:opacity-70 before:pointer-events-none sm:p-10">
               <p className="text-sm uppercase tracking-[0.35em] text-mist/70">
                 About
               </p>

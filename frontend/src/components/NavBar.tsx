@@ -7,7 +7,7 @@ const linkActive = 'bg-white/10 text-white'
 function NavBar() {
   return (
     <header className="sticky top-0 z-20 w-full border-b border-white/10 backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex w-full max-w-6xl flex-col items-center gap-3 px-6 py-4 sm:flex-row sm:justify-between">
         <NavLink
           to="/"
           className="text-sm font-semibold uppercase tracking-[0.3em] text-mist/70 transition hover:text-white"
@@ -15,7 +15,7 @@ function NavBar() {
         >
           david dudun
         </NavLink>
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex items-center gap-2">
           <NavLink
             to="/"
             className={({ isActive }) =>
